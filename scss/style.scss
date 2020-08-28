@@ -712,3 +712,69 @@ body {
 
 
 }
+
+// mikroraiony{
+
+.reset_button {
+    padding: 15px;
+    background-color: aqua;
+}
+
+
+// Mikroraiony
+
+.popular {
+
+
+    @media (max-width: 425px) {
+        .container {
+            max-width: 316px;
+
+        }
+
+        &__title {
+            text-align: left;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            margin-left: 40px;
+        }
+    }
+
+
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    &__images {
+        position: relative;
+        cursor: pointer;
+        transition: all .4s;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 300px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        transition: all 0.7s ease-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+
+    &__text-block {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+
+    }
+}
