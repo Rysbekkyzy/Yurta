@@ -117,12 +117,13 @@
                             </label>
                         </div>
                     </div>
-                    <form action="#">
+                    <form action="#" id="mob-filter">
                         <div class="mobile__modal--body">
                             <h3 class="mobile__bussines--type">Тип недвижимости</h3>
 
                             <!-- 1 fotka -->
-                            <button class="mobile__type--svg">
+                            <button class="mobile__type--svg" id="filter-focus">
+                                <input type="radio" id="filter-btn" class="filter-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
                                     <g fill="none" fill-rule="evenodd">
                                         <path fill="#E4D8F0"
@@ -143,7 +144,8 @@
                                 <div class="mobile__types--name">lorem</div>
                             </button>
                             <!-- 2 fotka -->
-                            <button class="mobile__type--svg">
+                            <button class="mobile__type--svg" id="filter-focus2">
+                                <input type="radio" id="filter-btn2" class="filter-btn">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="140" height="60" viewBox="0 0 50 50">
@@ -186,7 +188,8 @@
                             </button>
 
                             <!-- 3 fotka -->
-                            <button class="mobile__type--svg">
+                            <button class="mobile__type--svg" id="filter-focus3">
+                                <input type="radio" id="filter-btn3" class="filter-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
                                     <g fill="none" fill-rule="nonzero">
                                         <path fill="#E3D7EF"
@@ -210,7 +213,8 @@
                             </button>
 
                             <!-- 4 fotka -->
-                            <button class="mobile__type--svg">
+                            <button class="mobile__type--svg" id="filter-focus4">
+                                <input type="radio" id="filter-btn4" class="filter-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="140" height="60" viewBox="0 0 50 50">
                                     <defs>
@@ -263,8 +267,8 @@
                             </button>
 
                             <!-- 5 fotka -->
-                            <button class="mobile__type--svg">
-
+                            <button class="mobile__type--svg" id="filter-focus5">
+                                <input type="radio" id="filter-btn5" class="filter-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
                                     <g fill="none" fill-rule="evenodd">
                                         <path fill="#E4D8F0"
@@ -282,8 +286,8 @@
 
 
                             <!-- 6 fotka -->
-                            <button class="mobile__type--svg">
-
+                            <button class="mobile__type--svg" id="filter-focus6">
+                                <input type="radio" id="filter-btn6" class="filter-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="140" height="60" viewBox="0 0 50 50">
                                     <g fill="none" fill-rule="nonzero">
                                         <path fill="#E3D7EF"
@@ -330,73 +334,81 @@
                                 <div class="mobile__types--name">lorem</div>
                             </button>
                             <div class="mobile__rooms">
-                                <button class="mobile__room room--komnaty">Кол-во комнат</button>
-                                <button class="mobile__room">1</button>
-                                <button class="mobile__room">2</button>
-                                <button class="mobile__room">3</button>
-                                <button class="mobile__room">4</button>
-                                <button class="mobile__room room--5">5+</button>
-                                <button class="mobile__room room--7">Свободная планировка</button>
+                                <button class="mobile__room room--komnaty"> Кол-во комнат</button>
+                                <button id="rooms-btn" class="mobile__room">1
+                                    <input type="radio" id="rooms-inp" class="filter-rooms"></button>
+                                <button id="rooms-btn2" class="mobile__room">2
+                                    <input type="radio" id="rooms-inp2" class="filter-rooms">
+                                </button>
+                                <button id="rooms-btn3" class="mobile__room">3
+                                    <input type="radio" id="rooms-inp3" class="filter-rooms">
+                                </button>
+                                <button id="rooms-btn4" class="mobile__room">4
+                                    <input type="radio" id="rooms-inp4" class="filter-rooms">
+                                </button>
+                                <button id="rooms-btn5" class="mobile__room room--5">5+
+                                    <input type="radio" id="rooms-inp5" class="filter-rooms">
+                                </button>
+                                <button id="rooms-btn6" class="mobile__room room--7">
+                                    Свободная планировка
+                                    <input type="radio" id="rooms-inp6" class="filter-rooms"></button>
                             </div>
 
                         </div>
 
-                        <ul class="mobile__filter-wrapper">
-                            <li class="mobile__dropdown">
-                                <button id="mobile-dropbtn" class="mobile-dropbtn">Купить</button>
-                                <div id="mobile-myDropdown" class="mobile-dropdown-content">
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
+                        <div class="mobile__filter-wrapper">
+                            <select id="year">
+                                <option value="hide">Купить</option>
+                                <option value="2010">Купить</option>
+                                <option value="2011">Снять</option>
 
-                                </div>
-                            </li>
-                            <li class="mobile__dropdown">
-                                <button id="mobile-dropbtn2" class="mobile-dropbtn">Область</button>
-                                <div id="mobile-myDropdown2" class="mobile-dropdown-content">
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
-                                </div>
-                            </li>
+                            </select>
+                            <select id="year">
+                                <option value="hide">Область</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value="2012">2012</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                            </select>
 
-                            <li class="mobile__dropdown ">
 
-                                <input type="text" placeholder="Цена от" class="mobile__dropdown-input">
+                            <!-- <input type="text" placeholder="до" class="input-1">
+                            <input type="text" placeholder="до" class="input-1">
+                            <input type="text" placeholder="до" class="mobile__dropdown-input"> -->
 
-                            </li>
-                            <li class="mobile__dropdown">
+                            <div class="mobile__dropdown ">
 
-                                <input type="text" placeholder="до" class="mobile__dropdown-input">
+                                <input type="text" placeholder="Цена от" class="mobile__dropdown-input input-1">
 
-                            </li>
-                            <li class="mobile__dropdown">
-                                <button id="mobile-dropbtn5" class="mobile-dropbtn">$</button>
-                                <div id="mobile-myDropdown5" class="mobile-dropdown-content">
+                            </div>
+                            <div class="mobile__dropdown">
 
-                                    <p> <a href="#">Купить</a></p>
-                                    <p> <a href="#">Снять</a></p>
+                                <input type="text" placeholder="до" class="mobile__dropdown-input input-1">
 
-                                </div>
-                            </li>
+                            </div>
 
-                        </ul>
+                            <select id="year">
+                                <option value="hide">$</option>
+                                <option value="2010">$</option>
+                                <option value="2011">Сом</option>
+
+                            </select>
+                        </div>
 
                         <div class="mobile__buttons">
                             <button type="submit" class="submit-btn">Найти</button>
 
-                            <button type="reset" id="vacancy_reset" name="vacancy[reset]" class="reset_button btn"
-                                data-type="vacancy_search"> </button>
+                            <!-- <button type="reset" id="vacancy_reset" name="vacancy[reset]" class="reset_button btn"
+                                data-type="vacancy_search"> -->
+                            <input class="reset" type="reset" form="mob-filter">
                         </div>
                     </form>
 
-                    <div class="modal-footer">
+                    <!-- <div class="modal-footer">
                         <h3>Modal Footer</h3>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
