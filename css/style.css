@@ -43,6 +43,7 @@ body {
   color: white;
   padding-top: 150px;
   max-width: 100%;
+  font-size: 35px;
 }
 
 .banner__wrapper {
@@ -782,3 +783,4 @@ body {
   left: 20px;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */
