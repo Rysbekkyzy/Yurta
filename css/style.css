@@ -29,7 +29,7 @@ body {
   position: fixed;
   width: 100%;
   height: 70px;
-  background-color: #fff;
+  background-color: #581542;
   top: 0;
   left: 0;
   box-shadow: 0 1px 2px #E5E5E5;
@@ -888,3 +888,4 @@ body {
   left: 20px;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */
