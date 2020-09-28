@@ -10,9 +10,38 @@
 
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__main-nav">
+                <img class="header__logo" src="img/logo.svg" alt="logo" />
+                <img class="header__mobile-logo" src="img/logoMobile.svg" alt="logo" hidden />
+                <ul class="header__nav-bar">
+                    <li class="header__link">
+                        <a class="active-item" href="#">купить</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">арендовать</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">объявление</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#">блог</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="signup.html" class="join-btn">Войти</a>
+                    </li>
+                </ul>
+                <div class="header__burger-btn" hidden>
+                    <img class="open-burger-menu" src="img/burgerIcon.svg" alt="burger button"></img>
+                    <img class="close-burger-menu" src="img/closeIcon.svg" alt="close Icon" hidden>
+                </div>
+            </div>
+        </div>
+    </header><!--header-->
+
     <section class="banner">
         <div class="container">
-
             <div class="banner__img">
                 <h1 class="banner__slogan">Живи. Люби. </h1>
                 <form action="#" class="banner__form">
@@ -22,7 +51,6 @@
                             <div id="myDropdown" class="dropdown-content">
                                 <a href="#">Купить</a>
                                 <a href="#">Снять</a>
-
                             </div>
                         </li>
                         <li class="banner__dropdown">
